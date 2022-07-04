@@ -1,0 +1,88 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/Water.jpg');
+  background-position: center;
+  color: aliceblue;
+}
+
+.climate{
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: rgba(66, 59, 59, 0.667);
+  backdrop-filter: blur(8px); 
+}
+.mainClimate{
+  width: fit-content;
+  border-top: 1px solid black;
+  display: flex;
+}
+.temp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temp>h1{
+  width: 230px;
+  color: rgb(0, 255, 170);
+  margin: 0;
+  padding: 0 10px;
+ 
+}
+.main-icon{
+  width: 250px;
+  text-align: center;
+}
+.main-img>h2{
+  margin:0;
+  padding-bottom: 1rem;
+}
+.card{
+  width:fit-content;
+  text-align: left;
+  padding:.3rem .5rem;
+  font-size: 12px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card>h2{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 45px;
+  margin: 0;
+}
+img{
+  width: 23px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+span{
+  color: rgb(166, 72, 255);
+}
+button{
+  width: 160px;
+  height: 34px;
+  background-color: rgb(158, 77, 233);
+  color: azure;
+  font-size: 20px;
+  border: 1px solid rgb(255, 255, 255)
+}
+button:hover{
+  background-color: rgb(166, 84, 244);
+  cursor: pointer;
+  color: rgb(3, 219, 93);
+  border: 3px solid rgb(255, 255, 255)
+}
+@media (max-width: 710px){
+  .mainClimate{
+    flex-direction: column;
+  }
+}
